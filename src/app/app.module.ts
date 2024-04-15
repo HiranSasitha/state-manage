@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { NewTaskComponent } from './new-task/new-task.component';
+import { TaskComponent } from './task/task.component';
+import { TaskListComponent } from './task-list/task-list.component';
 
 
 
@@ -13,7 +15,9 @@ import { NewTaskComponent } from './new-task/new-task.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    NewTaskComponent
+    NewTaskComponent,
+    TaskComponent,
+    TaskListComponent
 
   ],
   imports: [

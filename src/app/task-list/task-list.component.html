@@ -1,0 +1,8 @@
+<div *ngIf="taskList.length > 0; else emptyList">
+    <div *ngFor="let task of taskList; trackBy: trackById">
+      <app-task [task]="task"></app-task>
+    </div>
+  </div>
+  <ng-template #emptyList>
+    <p class="text-center mt-2">No tasks yet!</p>
+  </ng-template>
